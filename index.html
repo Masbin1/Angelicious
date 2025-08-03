@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Angelicious Dessert</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body class="font-sans bg-pink-50 text-gray-800">
+  <body class="font-sans bg-pink-50 text-gray-800 font-outfit">
     <header class="bg-pink-50 py-4">
       <!-- Logo di tengah -->
       <div class="flex items-center justify-center relative">
@@ -36,7 +37,7 @@
       <div
         class="absolute inset-0 flex flex-col items-center justify-center text-center text-white"
       >
-        <h1 class="text-2xl font-semibold mb-4">
+        <h1 class="text-2xl font-semibold mb-4 font-outfit">
           buat momen indah dengan <br />
           rasa yang melembutkan.
         </h1>
@@ -57,7 +58,7 @@
       />
       <p class="text-sm text-gray-500">Est. 2018</p>
       <h2 class="text-2xl font-bold text-[#921A40] mt-2">Our Story</h2>
-      <p class="mt-4 max-w-2xl mx-auto text-gray-600">
+      <p class="mt-4 max-w-lg mx-auto text-gray-600">
         Persembahan manis dari dapur rumah yang penuh kasih. Kami percaya bahwa
         setiap momen, besar atau kecil, layak dirayakan dengan kelembutan rasa.
       </p>
@@ -71,15 +72,10 @@
     </section>
 
     <!-- PRODUCT FEATURES -->
-    <section class="py-10 bg-pink-50 px-6">
-      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
+    <section class="bg-pink-50 px-6">
+      <div class="py-5 grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
         <!-- Sweet -->
         <div>
-          <img
-            src="src/img/deks1/sweet.png"
-            alt="Sweet"
-            class="mx-auto h-24 mb-4"
-          />
           <h3 class="text-xl font-bold text-[#921A40]">Sweet</h3>
           <p class="text-gray-600 mt-2">Manisnya pas, tidak berlebihan.</p>
         </div>
@@ -91,6 +87,28 @@
             alt="Soft"
             class="mx-auto h-24 mb-4"
           />
+        </div>
+
+        <!-- Natural -->
+        <div>
+          <h3 class="text-xl font-bold text-[#921A40]">Natural</h3>
+          <p class="text-gray-600 mt-2">
+            Kami menggunakan bahan-bahan berkualitas dan alami.
+          </p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
+        <!-- Sweet -->
+        <div>
+          <img
+            src="src/img/deks1/sweet.png"
+            alt="Sweet"
+            class="mx-auto h-24 mb-4"
+          />
+        </div>
+
+        <!-- Soft -->
+        <div>
           <h3 class="text-xl font-bold text-[#921A40]">Soft</h3>
           <p class="text-gray-600 mt-2">
             Puding Angelicious memiliki tekstur selembut awan, halus, ringan,
@@ -105,10 +123,6 @@
             alt="Natural"
             class="mx-auto h-24 mb-4"
           />
-          <h3 class="text-xl font-bold text-[#921A40]">Natural</h3>
-          <p class="text-gray-600 mt-2">
-            Kami menggunakan bahan-bahan berkualitas dan alami.
-          </p>
         </div>
       </div>
 

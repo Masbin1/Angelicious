@@ -659,6 +659,14 @@ video {
   max-width: 72rem;
 }
 
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -740,11 +748,6 @@ video {
   padding-right: 2rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -760,6 +763,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -767,6 +775,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-outfit {
+  font-family: Outfit, sans-serif;
 }
 
 .font-sans {
@@ -847,6 +859,16 @@ video {
   font-family: 'Bahnschrift';
 
   src: url('/font/bahnscrift.TTF') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+
+  src: url('/font/Outfit-Regular.ttf') format('truetype');
 
   font-weight: normal;
 
