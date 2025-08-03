@@ -8,13 +8,19 @@
   </head>
   <body class="font-sans bg-pink-50 text-gray-800">
     <!-- NAVBAR -->
+    <!-- NAVBAR -->
     <header class="flex justify-between items-center py-4 px-8 bg-pink-50">
-      <img src="src/img/deks1/logo.png" alt="Logo" class="h-10" />
-      <nav class="flex gap-8 text-sm font-medium">
+      <!-- Logo -->
+      <img src="src/img/logo.png" alt="Logo" class="h-12" />
+
+      <!-- Navigation Menu (centered) -->
+      <nav
+        class="flex-1 flex justify-center gap-16 text-sm font-semibold text-pink-800"
+      >
         <a href="index.html" class="hover:underline">Home</a>
         <a href="about.html" class="hover:underline">About Us</a>
         <a href="product.html" class="hover:underline">Product</a>
-        <a href="review.html" class="text-pink-700 hover:underline">Review</a>
+        <a href="review.html" class="text-pink-900 underline">Review</a>
       </nav>
     </header>
 
@@ -102,8 +108,10 @@
     </section>
 
     <!-- CONTACT INFO -->
+    <!-- CONTACT INFO -->
     <section class="py-12 px-6 text-center">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <!-- Address -->
         <div
           class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center"
         >
@@ -118,7 +126,13 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M12 11c0 .341-.034.678-.1 1h-1.8a5 5 0 111.9-1zm0 0v-2m0 2a3 3 0 100 6 3 3 0 000-6z"
+              d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 22s8-4.5 8-12a8 8 0 10-16 0c0 7.5 8 12 8 12z"
             />
           </svg>
           <p class="mt-4 text-sm font-medium">
@@ -126,6 +140,7 @@
           </p>
         </div>
 
+        <!-- Phone -->
         <div
           class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center"
         >
@@ -140,12 +155,13 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 4.72V21"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.518 4.554a1 1 0 01-.272 1.033l-2.2 2.2a16 16 0 006.586 6.586l2.2-2.2a1 1 0 011.033-.272l4.554 1.518a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
             />
           </svg>
           <p class="mt-4 text-sm font-medium">+62 812 2179 7980</p>
         </div>
 
+        <!-- Instagram -->
         <div
           class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center"
         >
@@ -156,41 +172,57 @@
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+            <rect
+              x="2"
+              y="2"
+              width="20"
+              height="20"
+              rx="5"
+              ry="5"
               stroke-width="2"
-              d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2z"
             />
+            <path
+              stroke-width="2"
+              d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"
+            />
+            <circle cx="17.5" cy="6.5" r="1.5" />
           </svg>
           <p class="mt-4 text-sm font-medium">@angelicious.dessert</p>
         </div>
       </div>
 
       <!-- MAP -->
-      <div class="mt-10">
-        <img
-          src="https://maps.googleapis.com/maps/api/staticmap?center=-6.914744,107.609810&zoom=15&size=800x300&key=YOUR_API_KEY"
-          alt="Map"
-          class="rounded-2xl shadow-lg mx-auto"
-        />
+      <div class="mt-10 max-w-4xl mx-auto">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5157.312064216348!2d107.6546018!3d-6.912617199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e779b9d8bf4b%3A0x4d8f47d3b981d84!2sAngelicious%20Dessert!5e1!3m2!1sen!2sid!4v1754207928550!5m2!1sen!2sid"
+          class="w-full h-[400px] rounded-2xl shadow-lg border-0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer
-      class="bg-white border-t py-6 px-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600"
-    >
-      <div class="flex gap-6 mb-4 md:mb-0">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="about.html" class="hover:underline">About Us</a>
-        <a href="product.html" class="hover:underline">Product</a>
-        <a href="service.html" class="hover:underline">Service</a>
+    <footer class="bg-white border-t py-6 px-8">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <!-- Menu Navigasi -->
+        <div class="flex gap-8 text-pink-800 font-semibold text-sm">
+          <a href="index.html" class="hover:underline">Home</a>
+          <a href="about.html" class="hover:underline">About Us</a>
+          <a href="product.html" class="hover:underline">Product</a>
+          <a href="service.html" class="hover:underline">Service</a>
+        </div>
+
+        <!-- Logo Tengah -->
+        <img src="src/img/logo.png" alt="Logo" class="h-12" />
+
+        <!-- Copyright -->
+        <p class="text-sm text-gray-700">
+          © 2025 Angelicious Dessert Inc. All rights reserved
+        </p>
       </div>
-      <img src="src/img/deks1/logo.png" alt="Logo" class="h-10 mb-4 md:mb-0" />
-      <p class="text-center">
-        © 2025 Angelicious Dessert Inc. All right reversed
-      </p>
     </footer>
   </body>
 </html>
