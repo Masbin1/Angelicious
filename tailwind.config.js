@@ -7,6 +7,7 @@ module.exports = {
         migraBold: ['"Migra ExtraBold"', 'serif'],
         migraLight: ['"Migra ExtraLight"', 'serif'],
         sloop: ['"Sloop Script"', 'cursive'],
+        outfit: ['Outfit', 'sans-serif'],
       },
     },
   },
