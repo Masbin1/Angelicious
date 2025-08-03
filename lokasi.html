@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temukan Kami - Akmal Bakery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+    </style>
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
+    <!-- HEADER -->
+    <header class="bg-white shadow relative">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Left Menu -->
+        <nav class="flex items-center gap-8 font-bold text-sm">
+          <a href="index.html" class="hover:text-yellow-600">HOME</a>
+
+          <!-- Dropdown ABOUT US -->
+          <div class="relative">
+            <button
+              onclick="toggleDropdown('aboutDropdown')"
+              class="flex items-center gap-1 hover:text-yellow-600"
+            >
+              ABOUT US <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div
+              id="aboutDropdown"
+              class="hidden absolute bg-white shadow-lg rounded-md mt-2 w-40"
+            >
+              <a
+                href="about_sejarah.html"
+                class="block px-4 py-2 hover:bg-yellow-100"
+                >Sejarah</a
+              >
+              <a
+                href="about_profile.html"
+                class="block px-4 py-2 hover:bg-yellow-100"
+                >Profile</a
+              >
+            </div>
+          </div>
+
+          <a href="product.html" class="hover:text-yellow-600">PRODUCT</a>
+        </nav>
+
+        <!-- Logo Centered -->
+        <div class="absolute left-1/2 transform -translate-x-1/2">
+          <a href="index.html">
+            <img
+              src="src/img/logo/logo.png"
+              alt="Akmal Bakery Logo"
+              class="h-24"
+            />
+          </a>
+        </div>
+
+        <!-- Right Menu -->
+        <nav class="flex items-center gap-8 font-bold text-sm relative">
+          <a href="lokasi.html" class="text-yellow-600">LOKASI</a>
+
+          <!-- Dropdown KONTAK -->
+          <div class="relative">
+            <button
+              onclick="toggleDropdown('kontakDropdown')"
+              class="flex items-center gap-1 hover:text-yellow-600"
+            >
+              KONTAK <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div
+              id="kontakDropdown"
+              class="hidden absolute bg-white shadow-lg rounded-md mt-2 w-40"
+            >
+              <a
+                href="https://api.whatsapp.com/send/?phone=6285159951207&text&type=phone_number&app_absent=0"
+                target="_blank"
+                class="flex items-center gap-2 px-4 py-2 hover:bg-yellow-100"
+              >
+                <i class="fab fa-whatsapp text-green-500"></i> WhatsApp
+              </a>
+              <a
+                href="https://www.facebook.com/akmal.bkry"
+                target="_blank"
+                class="flex items-center gap-2 px-4 py-2 hover:bg-yellow-100"
+              >
+                <i class="fab fa-facebook text-blue-600"></i> Facebook
+              </a>
+              <a
+                href="https://maps.app.goo.gl/nqqEuFVbhXzS5Egw6"
+                target="_blank"
+                class="flex items-center gap-2 px-4 py-2 hover:bg-yellow-100"
+              >
+                <i class="fas fa-map-marker-alt text-red-500"></i> Maps
+              </a>
+            </div>
+          </div>
+
+          <a href="news.html" class="hover:text-yellow-600">NEWS & PROMO</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- SCRIPT UNTUK DROPDOWN -->
+    <script>
+      function toggleDropdown(id) {
+        document.querySelectorAll('[id$="Dropdown"]').forEach((drop) => {
+          if (drop.id !== id) drop.classList.add("hidden");
+        });
+        document.getElementById(id).classList.toggle("hidden");
+      }
+
+      // Klik di luar dropdown untuk menutup
+      document.addEventListener("click", function (e) {
+        if (!e.target.closest(".relative")) {
+          document
+            .querySelectorAll('[id$="Dropdown"]')
+            .forEach((drop) => drop.classList.add("hidden"));
+        }
+      });
+    </script>
+
+    <!-- BANNER -->
+    <section class="bg-[#fff4d6] text-center py-10">
+      <h2 class="text-2xl font-bold">TEMUKAN KAMI</h2>
+      <p class="mt-2 font-semibold">
+        TOKO KUE AKMAL BAKERY YANG MENYAJIKAN PILIHAN KUE YANG ENAK ENAK
+      </p>
+    </section>
+
+    <!-- TOKO KAMI -->
+    <main class="max-w-7xl mx-auto px-6 py-16 text-center">
+      <h3 class="text-lg font-bold">TOKO KAMI</h3>
+
+      <div class="flex justify-center mt-10">
+        <div class="bg-[#4b2c20] text-white max-w-sm w-full">
+          <img
+            src="src/img/lokasi/toko.jpg"
+            alt="Toko Akmal Bakery"
+            class="w-full object-cover"
+          />
+          <div class="p-6">
+            <h4 class="text-lg font-bold">PASAR AMPERA</h4>
+            <p class="mt-2 text-sm leading-relaxed">
+              Pasar Ampera Tanjungsari Barat Kecamatan Cikaum Kabupaten Subang
+            </p>
+            <p class="mt-2 text-sm">WA: 0877-2255-0971</p>
+            <p class="text-sm">WA: 0896-2364-9495</p>
+            <p class="text-sm">FB: Akmal Bky</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#4b2c20] text-white text-center md:text-left py-10">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+        <!-- Toko -->
+        <div class="text-center">
+          <h3 class="font-bold text-lg">TOKO</h3>
+          <p class="mt-2">
+            Pasar Ampera Tanjungsari Barat <br />
+            Kecamatan Cikaum Kabupaten Subang
+          </p>
+        </div>
+        <!-- Alamat -->
+        <div class="text-center">
+          <h3 class="font-bold text-lg">ALAMAT</h3>
+          <p class="mt-2">
+            Dusun Krajan 1 Desa Tanjung Sari Timur <br />
+            Kecamatan Cikaum Kabupaten Subang
+          </p>
+        </div>
+        <!-- Kontak -->
+        <div class="text-center">
+          <h3 class="font-bold text-lg">KONTAK</h3>
+          <div
+            class="flex ml-[150px] justify-center md:justify-start gap-4 mt-3 text-2xl"
+          >
+            <a
+              href="https://api.whatsapp.com/send/?phone=6285159951207&text&type=phone_number&app_absent=0"
+              target="_blank"
+              class="hover:text-green-500"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/akmal.bkry"
+              target="_blank"
+              class="hover:text-blue-600"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/akmal_bkry?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              class="hover:text-pink-500"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="mt-6 text-end text-sm mr-[50px]">
+        ©2025 Powered by Akmal Bakery
+      </p>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

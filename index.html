@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angelicious Dessert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-pink-50 text-gray-800">
+    <!-- NAVBAR -->
+    <header class="flex justify-between items-center py-4 px-8 bg-pink-50">
+      <img src="src/img/deks1/logo.png" alt="Logo" class="h-10" />
+      <nav class="flex gap-8 text-sm font-medium">
+        <a href="#" class="text-pink-700 hover:underline">Home</a>
+        <a href="#" class="hover:underline">About Us</a>
+        <a href="#" class="hover:underline">Product</a>
+        <a href="#" class="hover:underline">Review</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative">
+      <img
+        src="src/img/deks1/hero_image_deks1.png"
+        alt="Hero"
+        class="w-full h-[500px] object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent to-pink-50"
+      ></div>
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-center text-white"
+      >
+        <h1 class="text-2xl font-semibold mb-4">
+          buat momen indah dengan <br />
+          rasa yang melembutkan.
+        </h1>
+        <a
+          href="#"
+          class="bg-pink-700 hover:bg-pink-800 text-white px-6 py-2 rounded-full font-medium"
+          >Shop now</a
+        >
+      </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="py-16 text-center px-6 relative">
+      <img
+        src="src/img/deks1/coklat.png"
+        alt="Coklat"
+        class="absolute left-10 top-10 w-32 opacity-80 hidden md:block"
+      />
+      <p class="text-sm text-gray-500">Est. 2018</p>
+      <h2 class="text-2xl font-bold text-pink-700 mt-2">Our Story</h2>
+      <p class="mt-4 max-w-2xl mx-auto text-gray-600">
+        Persembahan manis dari dapur rumah yang penuh kasih. Kami percaya bahwa
+        setiap momen, besar atau kecil, layak dirayakan dengan kelembutan rasa.
+      </p>
+      <a
+        href="#"
+        class="inline-flex items-center mt-6 bg-pink-700 hover:bg-pink-800 text-white px-5 py-2 rounded-full"
+      >
+        View more
+        <span class="ml-2">&rarr;</span>
+      </a>
+    </section>
+
+    <!-- PRODUCT FEATURES -->
+    <section class="py-10 bg-pink-50 px-6">
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
+        <!-- Sweet -->
+        <div>
+          <img
+            src="src/img/deks1/sweet.png"
+            alt="Sweet"
+            class="mx-auto h-24 mb-4"
+          />
+          <h3 class="text-xl font-bold text-pink-700">Sweet</h3>
+          <p class="text-gray-600 mt-2">Manisnya pas, tidak berlebihan.</p>
+        </div>
+
+        <!-- Soft -->
+        <div>
+          <img
+            src="src/img/deks1/soft.png"
+            alt="Soft"
+            class="mx-auto h-24 mb-4"
+          />
+          <h3 class="text-xl font-bold text-pink-700">Soft</h3>
+          <p class="text-gray-600 mt-2">
+            Puding Angelicious memiliki tekstur selembut awan, halus, ringan,
+            dan meleleh di mulut.
+          </p>
+        </div>
+
+        <!-- Natural -->
+        <div>
+          <img
+            src="src/img/deks1/natural.png"
+            alt="Natural"
+            class="mx-auto h-24 mb-4"
+          />
+          <h3 class="text-xl font-bold text-pink-700">Natural</h3>
+          <p class="text-gray-600 mt-2">
+            Kami menggunakan bahan-bahan berkualitas dan alami.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-8">
+        <a
+          href="#"
+          class="inline-flex items-center bg-pink-700 hover:bg-pink-800 text-white px-5 py-2 rounded-full"
+        >
+          View Product
+          <span class="ml-2">&rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-white border-t py-6 px-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600"
+    >
+      <div class="flex gap-6 mb-4 md:mb-0">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">About Us</a>
+        <a href="#" class="hover:underline">Product</a>
+        <a href="#" class="hover:underline">Service</a>
+      </div>
+      <img src="src/img/deks1/logo.png" alt="Logo" class="h-10 mb-4 md:mb-0" />
+      <p class="text-center">
+        © 2025 Angelicious Dessert Inc. All right reversed
+      </p>
+    </footer>
+  </body>
+</html>
