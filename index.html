@@ -8,7 +8,7 @@
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
   <body class="font-sans bg-pink-50 text-gray-800 font-outfit">
-    <header class="bg-pink-50 py-4">
+    <header class="bg-[#f9f3ef] py-4">
       <!-- Logo di tengah -->
       <div class="flex items-center justify-center relative">
         <img src="src/img/logo.png" alt="Logo" class="h-20 mb-10" />
@@ -16,7 +16,7 @@
       <div class="flex items-center justify-center relative">
         <!-- Navigation Left -->
         <nav class="flex gap-16 text-sm font-semibold text-pink-800 absolute">
-          <a href="index.html" class="hover:underline">Home</a>
+          <a href="index.html" class="underline">Home</a>
           <a href="about.html" class="hover:underline">About Us</a>
           <a href="product.html" class="hover:underline">Product</a>
           <a href="review.html" class="hover:underline">Review</a>
@@ -50,7 +50,7 @@
     </section>
 
     <!-- OUR STORY -->
-    <section class="py-16 text-center px-6 relative">
+    <section class="py-16 bg-[#f9f3ef] text-center px-6 relative">
       <img
         src="src/img/deks1/coklat.png"
         alt="Coklat"
@@ -71,65 +71,72 @@
       </a>
     </section>
 
-    <!-- PRODUCT FEATURES -->
-    <section class="bg-pink-50 px-6">
-      <div class="py-5 grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
+    <section class="bg-[#f9f3ef] py-12">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-3 items-center text-center gap-8"
+      >
         <!-- Sweet -->
-        <div>
-          <h3 class="text-xl font-bold text-[#921A40]">Sweet</h3>
-          <p class="text-gray-600 mt-2">Manisnya pas, tidak berlebihan.</p>
-        </div>
-
-        <!-- Soft -->
-        <div>
-          <img
-            src="src/img/deks1/soft.png"
-            alt="Soft"
-            class="mx-auto h-24 mb-4"
-          />
-        </div>
-
-        <!-- Natural -->
-        <div>
-          <h3 class="text-xl font-bold text-[#921A40]">Natural</h3>
-          <p class="text-gray-600 mt-2">
-            Kami menggunakan bahan-bahan berkualitas dan alami.
+        <div class="text-left ml-[100px]">
+          <h3 class="text-3xl font-extrabold text-[#921A40]">Sweet</h3>
+          <p class="text-xl leading-relaxed mt-2">
+            Manisnya pas,<br />tidak berlebihan.
           </p>
         </div>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
-        <!-- Sweet -->
+
+        <!-- Fruit Cake (tengah) -->
         <div>
           <img
-            src="src/img/deks1/sweet.png"
-            alt="Sweet"
-            class="mx-auto h-24 mb-4"
+            src="src/img/deks1/natural.png"
+            alt="Fruit Cake"
+            class="w-64 mx-auto"
           />
         </div>
 
         <!-- Soft -->
-        <div>
-          <h3 class="text-xl font-bold text-[#921A40]">Soft</h3>
-          <p class="text-gray-600 mt-2">
+        <div class="text-left">
+          <h3 class="text-3xl font-extrabold text-[#921A40]">Soft</h3>
+          <p class="text-xl leading-relaxed mt-2">
             Puding Angelicious memiliki tekstur selembut awan, halus, ringan,
             dan meleleh di mulut.
           </p>
         </div>
+      </div>
 
-        <!-- Natural -->
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-3 items-center text-center gap-8 mt-4"
+      >
+        <!-- Puding Bulat -->
         <div>
           <img
-            src="src/img/deks1/natural.png"
-            alt="Natural"
-            class="mx-auto h-24 mb-4"
+            src="src/img/deks1/sweet.png"
+            alt="Sweet Pudding"
+            class="w-64 mx-auto"
+          />
+        </div>
+
+        <!-- Natural -->
+        <div class="text-left">
+          <h3 class="text-3xl font-extrabold text-[#921A40]">Natural</h3>
+          <p class="text-xl leading-relaxed mt-2">
+            Kami menggunakan bahan-bahan berkualitas dan alami.
+          </p>
+        </div>
+
+        <!-- Coklat Cake -->
+        <div>
+          <img
+            src="src/img/deks1/soft.png"
+            alt="Chocolate Cake"
+            class="w-64 mx-auto"
           />
         </div>
       </div>
 
-      <div class="flex justify-center mt-8">
+      <!-- Button -->
+      <div class="flex justify-center mt-12">
         <a
           href="#"
-          class="inline-flex items-center bg-[#921A40] hover:bg-pink-800 text-white px-5 py-2 rounded-full"
+          class="inline-flex items-center bg-[#921A40] hover:bg-pink-800 text-white text-lg px-6 py-3 rounded-full"
         >
           View Product
           <span class="ml-2">&rarr;</span>
